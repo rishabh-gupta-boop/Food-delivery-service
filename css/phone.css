@@ -1,0 +1,41 @@
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li{
+    
+    font-size: 0.8rem;
+}
+/* Home */
+#home{
+    padding: 4px;
+}
+#home p{
+    font-size: 0.5rem;
+    padding : 10px;
+}
+#home-primary{
+    padding: 4px;
+}
+
+
+/* Services */
+#services {
+    flex-direction: column;
+    margin: 4px;
+}
+/* Client Section */
+
+#clients{
+    flex-direction: column;
+}
+/* Contact Us Section  */
+
+#contact-box  form{
+    width: 80%;
+}
+#contact-box input, #contact-box textarea{
+    padding: 1px;
+
+}
+
+/* Footer */

@@ -1,0 +1,283 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/* CSS Variable */
+:root{
+    --navbar-height: 59px;
+}
+
+
+.main-relative{
+    position: relative;
+}
+
+/*  Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    
+    
+}
+
+#navbar::before{
+    content:"";
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+
+/* Logo */
+#logo{
+    margin:10px 30px;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+}
+
+/* Navigation links */
+#navbar ul{
+    display: flex;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    padding: 2px 20px;
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+
+
+
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 200px;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+#home::before{
+    content:"";
+    position: absolute;
+    background :url("../images/vegetables.jpg") no-repeat center center/cover;
+    width: 100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.7; 
+    top:0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+
+    /* home-heading */
+#home-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    
+
+}
+
+#home p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    border-radius: 20px;
+    margin: 17px;
+    font-family: 'Baloo Bhai 2', cursive;
+    cursor: pointer;
+}
+
+
+
+/* Services */
+#section-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#services{
+    display:flex;
+    margin: 34px;
+    margin-top: 20px;
+    
+}
+
+#section-container #section-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    
+    font-family: 'Bree Serif', serif;
+    margin-top: 70px;
+    
+}
+
+#services #box{
+    border: 2px solid red;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 23px;
+    background-color:rgb(245, 240, 240);
+    
+}
+#services #box img{
+    height: 150px;
+    width: 150px;
+
+
+}
+
+/* Client Section */
+#client-section{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+}
+
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url(../images/clients.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    right:0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+
+
+}
+
+#client-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    
+    font-family: 'Bree Serif', serif;
+    margin-top: 70px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+ }
+
+
+
+
+#client-item{
+    
+    padding: 60px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#contact::before{
+    content: "";
+    background:url("../images/contact.jpg") no-repeat center center/cover ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top:0px;
+    bottom: 0px;
+    right: 0px;
+
+    left: 0px;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;    
+    font-family: 'Bree Serif', serif;
+    margin-top: 70px;
+}
+
+/* Contact box */
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1px;
+}
+
+#contact-box  form{
+    width: 40%;
+}
+
+#contact-box label ,input{
+    font-size: 1.3rem;
+    font-family:'Bree Serif', serif ;
+}
+
+/* Footer */
+.footer{
+    align-content: center;
+    justify-content: center ;
+    text-align: center;
+    background: black;
+    color:rgb(245, 240, 240)
+}
+
